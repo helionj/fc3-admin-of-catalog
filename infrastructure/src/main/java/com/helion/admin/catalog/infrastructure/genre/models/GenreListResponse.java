@@ -10,5 +10,6 @@ public record GenreListResponse(
         @JsonProperty("name") String name,
         @JsonProperty("is_active")Boolean active,
         @JsonProperty("created_at") Instant createdAt,
-        @JsonProperty("deleted_at") Instant deletedAt
+        @JsonProperty("deleted_at") Instant deletedAt,
+        @JsonProperty("categories_ids") List<String> categories
 ) {}

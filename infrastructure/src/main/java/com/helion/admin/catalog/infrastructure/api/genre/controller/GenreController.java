@@ -62,6 +62,10 @@ public class GenreController implements GenreAPI {
 
     @Override
     public Pagination<GenreListResponse> listGenres(String search, int page, int perPage, String sort, String direction) {
+        if (perPage == 0){
+            perPage = Integer.MAX_VALUE;
+            page = 0;
+        }
         return listGenreUseCase.execute(new SearchQuery(page, perPage, search, sort, direction))
                 .map(GenreApiPresenter::present);
     }

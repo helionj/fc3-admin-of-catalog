@@ -24,7 +24,8 @@ public class GenreApiPresenter {
                 output.name(),
                 output.isActive(),
                 output.createdAt(),
-                output.deletedAt()
+                output.deletedAt(),
+                output.categories()
         );
     }
 }

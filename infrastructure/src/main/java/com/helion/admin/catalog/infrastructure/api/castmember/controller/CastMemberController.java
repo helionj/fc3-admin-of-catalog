@@ -57,6 +57,10 @@ public class CastMemberController implements CastMemberAPI {
 
     @Override
     public Pagination<CastMemberListResponse> listCastMembers(String search, int page, int perPage, String sort, String direction) {
+        if (perPage == 0){
+            perPage = Integer.MAX_VALUE;
+            page = 0;
+        }
         return listCastMemberUseCase.execute(new SearchQuery(page, perPage, search, sort, direction))
                 .map(CastMemberApiPresenter::present);
     }

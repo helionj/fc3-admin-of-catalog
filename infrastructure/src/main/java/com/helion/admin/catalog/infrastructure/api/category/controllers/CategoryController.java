@@ -75,6 +75,10 @@ public class CategoryController implements CategoryAPI {
             int perPage,
             String sort,
             String direction) {
+        if (perPage == 0){
+            perPage = Integer.MAX_VALUE;
+            page = 0;
+        }
         return listCategoriesUseCase.execute(new SearchQuery(page, perPage, search, sort, direction))
                 .map(CategoryApiPresenter::present);
     }
