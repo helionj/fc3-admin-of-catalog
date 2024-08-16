@@ -1,7 +1,6 @@
 package com.helion.admin.catalog.infrastructure.genre.models;
 
 import com.helion.admin.catalog.infrastructure.JacksonTest;
-import com.helion.admin.catalog.infrastructure.category.models.CategoryListResponse;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +16,8 @@ public class GenreListResponseTest {
     @Autowired
     private JacksonTester<GenreListResponse> json;
 
+
+
     @Test
     public void testMarshall() throws IOException {
         final var expectedId = "123";
@@ -24,13 +25,16 @@ public class GenreListResponseTest {
         final var expectedIsActive = false;
         final var expectedCreatedAt = Instant.now();
         final var expectedDeletedAt = Instant.now();
+        final var cats = List.<String>of();
 
         final var response = new GenreListResponse(
                 expectedId,
                 expectedName,
                 expectedIsActive,
                 expectedCreatedAt,
-                expectedDeletedAt
+                expectedDeletedAt,
+                cats
+
         );
 
         final var actualJson = this.json.write(response);
