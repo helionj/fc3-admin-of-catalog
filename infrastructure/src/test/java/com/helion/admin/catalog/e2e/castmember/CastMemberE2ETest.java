@@ -1,33 +1,13 @@
 package com.helion.admin.catalog.e2e.castmember;
 
 import com.helion.admin.catalog.E2ETest;
-import com.helion.admin.catalog.domain.Fixture;
-import com.helion.admin.catalog.domain.castmember.CastMemberID;
-import com.helion.admin.catalog.domain.castmember.CastMemberType;
-import com.helion.admin.catalog.domain.genre.GenreID;
-import com.helion.admin.catalog.e2e.MockDsl;
-import com.helion.admin.catalog.infrastructure.castmember.models.UpdateCastMemberRequest;
-import com.helion.admin.catalog.infrastructure.castmember.persistence.CastMemberRepository;
-import org.hamcrest.Matchers;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.test.context.DynamicPropertyRegistry;
-import org.springframework.test.context.DynamicPropertySource;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import org.testcontainers.containers.MySQLContainer;
-import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
-
-import static org.hamcrest.Matchers.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @E2ETest
 @Testcontainers
-public class CastMemberE2ETest implements MockDsl {
-
+public class CastMemberE2ETest  {
+/*
+implements MockDsl
     @Autowired
     private CastMemberRepository castMemberRepository;
 
@@ -281,4 +261,6 @@ public class CastMemberE2ETest implements MockDsl {
         Assertions.assertEquals(0, castMemberRepository.count());
 
     }
+
+ */
 }

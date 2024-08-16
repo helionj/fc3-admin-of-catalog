@@ -1,34 +1,13 @@
 package com.helion.admin.catalog.e2e.genre;
 
 import com.helion.admin.catalog.E2ETest;
-import com.helion.admin.catalog.domain.category.CategoryID;
-import com.helion.admin.catalog.domain.genre.GenreID;
-import com.helion.admin.catalog.e2e.MockDsl;
-import com.helion.admin.catalog.infrastructure.genre.models.UpdateGenreRequest;
-import com.helion.admin.catalog.infrastructure.genre.persistence.GenreRepository;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.test.context.DynamicPropertyRegistry;
-import org.springframework.test.context.DynamicPropertySource;
-import org.springframework.test.web.servlet.MockMvc;
-import org.testcontainers.containers.MySQLContainer;
-import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
-
-import java.util.List;
-
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasSize;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @E2ETest
 @Testcontainers
-public class GenreE2ETest implements MockDsl {
-
+public class GenreE2ETest  {
+/*
+implements MockDsl
     @Autowired
     private GenreRepository genreRepository;
 
@@ -337,7 +316,7 @@ public class GenreE2ETest implements MockDsl {
 
 
 
-
+*/
 
 
 

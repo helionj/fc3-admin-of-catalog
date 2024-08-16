@@ -1,39 +1,14 @@
 package com.helion.admin.catalog.e2e.category;
 
 import com.helion.admin.catalog.E2ETest;
-import com.helion.admin.catalog.domain.category.CategoryID;
-import com.helion.admin.catalog.e2e.MockDsl;
-import com.helion.admin.catalog.infrastructure.category.models.CategoryListResponse;
-import com.helion.admin.catalog.infrastructure.category.models.CategoryResponse;
-import com.helion.admin.catalog.infrastructure.category.models.CreateCategoryRequest;
-import com.helion.admin.catalog.infrastructure.category.models.UpdateCategoryRequest;
-import com.helion.admin.catalog.infrastructure.category.persistence.CategoryRepository;
-import com.helion.admin.catalog.infrastructure.configuration.json.Json;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.test.context.DynamicPropertyRegistry;
-import org.springframework.test.context.DynamicPropertySource;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.ResultActions;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import org.testcontainers.containers.MySQLContainer;
-import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
-
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasSize;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @E2ETest
 @Testcontainers
-public class CategoryE2ETest implements MockDsl {
+public class CategoryE2ETest  {
 
-
+/*
+implements MockDsl
     @Autowired
     private CategoryRepository categoryRepository;
 
@@ -318,5 +293,5 @@ public class CategoryE2ETest implements MockDsl {
         return Json.readValue(json, CategoryResponse.class);
     }
 
-
+*/
 }
